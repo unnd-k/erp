@@ -93,7 +93,7 @@ body.dark-mode .loading-overlay { background: rgba(0,0,0,0.8); }
 
 /* ── 폼 입력 ── */
 .input-group { margin-bottom: 18px; }
-.input-group label { display: block; font-size: 11px; font-weight: 700; color: var(--text-sub); margin-bottom: 7px; text-transform: uppercase; }
+.input-group label { display: block; font-size: 12px; font-weight: 600; color: var(--text-sub); margin-bottom: 7px; text-transform: uppercase; }
 .input-group input, .input-group select {
   width: 100%; padding: 13px 14px; border: 1px solid var(--border-main);
   background: var(--bg-main); color: var(--text-main); font-size: 14px; font-weight: 500;
@@ -123,11 +123,11 @@ body.dark-mode .loading-overlay { background: rgba(0,0,0,0.8); }
 .icon-item.active { background: var(--accent-bg); color: var(--accent-text); }
 
 /* ── Auth 화면 ── */
-.auth-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--bg-body); z-index: 9998; display: flex; justify-content: center; align-items: center; }
+.auth-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: url(https://i.imgur.com/LqTj15D.jpeg) no-repeat center center; z-index: 9998; display: flex; justify-content: center; align-items: center; background-size: cover;}
 .auth-box { background: var(--bg-main); border: 1px solid var(--border-main); padding: 40px 36px; width: 90%; max-width: 380px; box-shadow: 8px 8px 0 rgba(0,0,0,0.15); }
 .auth-logo { display: flex; align-items: center; gap: 12px; margin-bottom: 30px; justify-content: center;}
-.auth-logo img { height: 26px; }
-.auth-logo span { font-family: Paperlogy, sans-serif; font-size: 1.6rem; font-weight: 700; color: var(--text-main); text-transform: uppercase; }
+.auth-logo img { height: 35px; }
+.auth-logo span { font-family: Paperlogy, sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--text-main); text-transform: uppercase; }
 .auth-title { font-size: 22px; font-weight: 800; margin-bottom: 5px; letter-spacing: -0.5px; display: none;}
 .auth-sub { font-size: 13px; color: var(--text-sub); margin-bottom: 26px; display: none;}
 .auth-error { background: #fee2e2; border: 1px solid #fca5a5; color: #dc2626; padding: 10px 13px; font-size: 12px; font-weight: 600; margin-bottom: 13px; }
