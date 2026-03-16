@@ -125,11 +125,11 @@ body.dark-mode .loading-overlay { background: rgba(0,0,0,0.8); }
 /* ── Auth 화면 ── */
 .auth-screen { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--bg-body); z-index: 9998; display: flex; justify-content: center; align-items: center; }
 .auth-box { background: var(--bg-main); border: 1px solid var(--border-main); padding: 40px 36px; width: 90%; max-width: 380px; box-shadow: 8px 8px 0 rgba(0,0,0,0.15); }
-.auth-logo { display: flex; align-items: center; gap: 12px; margin-bottom: 30px; }
+.auth-logo { display: flex; align-items: center; gap: 12px; margin-bottom: 30px; justify-content: center;}
 .auth-logo img { height: 26px; }
 .auth-logo span { font-family: Paperlogy, sans-serif; font-size: 13px; font-weight: 800; color: var(--text-sub); text-transform: uppercase; }
 .auth-title { font-size: 22px; font-weight: 800; margin-bottom: 5px; letter-spacing: -0.5px; }
-.auth-sub { font-size: 13px; color: var(--text-sub); margin-bottom: 26px; }
+.auth-sub { font-size: 13px; color: var(--text-sub); margin-bottom: 26px; display: none;}
 .auth-error { background: #fee2e2; border: 1px solid #fca5a5; color: #dc2626; padding: 10px 13px; font-size: 12px; font-weight: 600; margin-bottom: 13px; }
 .auth-success { background: #dcfce7; border: 1px solid #86efac; color: #16a34a; padding: 10px 13px; font-size: 12px; font-weight: 600; margin-bottom: 13px; }
 .auth-btn { width: 100%; padding: 14px; background: var(--accent-bg); color: var(--accent-text); border: 1px solid var(--border-main); font-size: 14px; font-weight: 700; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; margin-top: 8px; }
