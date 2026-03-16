@@ -33,7 +33,7 @@ export default function AuthScreen({ onLogin }) {
       <div className="auth-box">
         <div className="auth-logo">
           <img src="https://unnd.kr/img/unnd_logo.svg" alt="unnd" />
-          <span>Studio Unnamed</span>
+          <span>스튜디오언네임드</span>
         </div>
         <div className="auth-title">{isLogin ? '로그인' : '회원가입'}</div>
         <div className="auth-sub">{isLogin ? '프로젝트 관리 앱에 오신 것을 환영합니다' : '새 계정을 만들어주세요'}</div>
