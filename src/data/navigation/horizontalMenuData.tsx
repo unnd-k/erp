@@ -159,9 +159,9 @@ const horizontalMenuData = (dictionary: Awaited<ReturnType<typeof getDictionary>
         icon: 'ri-calendar-line'
       },
       {
-        label: dictionary['navigation'].kanban,
-        href: '/apps/kanban',
-        icon: 'ri-drag-drop-line'
+        label: dictionary['navigation'].project,
+        href: '/apps/project',
+        icon: 'ri-folder-2-line'
       },
       {
         label: dictionary['navigation'].invoice,
