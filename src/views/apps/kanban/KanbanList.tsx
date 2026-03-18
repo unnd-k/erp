@@ -53,22 +53,34 @@ const KanbanList = (props: KanbanListProps) => {
     draggable: el => el.classList.contains('item-draggable')
   })
 
-  // Add New Task
-  const addNewTask = (title: string) => {
-    dispatch(addTask({ columnId: column.id, title: title }))
+// KanbanList.tsx 내의 addNewTask 함수 수정
+const addNewTask = (title: string) => {
+  const newId = store.tasks.length > 0 ? store.tasks[store.tasks.length - 1].id + 1 : 1;
 
-    setTasksList([...tasksList, { id: store.tasks[store.tasks.length - 1].id + 1, title }])
+  dispatch(addTask({ columnId: column.id, title: title }))
 
-    const newColumns = columns.map(col => {
-      if (col.id === column.id) {
-        return { ...col, taskIds: [...col.taskIds, store.tasks[store.tasks.length - 1].id + 1] }
-      }
+  // 여기에 부족한 속성들을 기본값으로 추가합니다.
+  setTasksList([
+    ...tasksList,
+    {
+      id: newId,
+      title: title,
+      company: '',      // 추가
+      category: '',     // 추가
+      amount: 0,        // 추가
+      status: 'active'  // 추가 (혹은 프로젝트에서 사용하는 기본값)
+    }
+  ])
 
-      return col
-    })
+  const newColumns = columns.map(col => {
+    if (col.id === column.id) {
+      return { ...col, taskIds: [...col.taskIds, newId] }
+    }
+    return col
+  })
 
-    setColumns(newColumns)
-  }
+  setColumns(newColumns)
+}
 
   // Handle Submit Edit
   const handleSubmitEdit = (e: FormEvent<HTMLFormElement>) => {
