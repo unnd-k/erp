@@ -166,8 +166,8 @@ const HorizontalMenu = ({ dictionary }: { dictionary: Awaited<ReturnType<typeof 
           <MenuItem href={`/${locale}/apps/calendar`} icon={<i className='ri-calendar-line' />}>
             {dictionary['navigation'].calendar}
           </MenuItem>
-          <MenuItem href={`/${locale}/apps/kanban`} icon={<i className='ri-drag-drop-line' />}>
-            {dictionary['navigation'].kanban}
+          <MenuItem href={`/${locale}/apps/project`} icon={<i className='ri-folder-2-line' />}>
+            {dictionary['navigation'].project}
           </MenuItem>
           <SubMenu label={dictionary['navigation'].invoice} icon={<i className='ri-file-list-2-line' />}>
             <MenuItem href={`/${locale}/apps/invoice/list`}>{dictionary['navigation'].list}</MenuItem>
