@@ -226,7 +226,7 @@ export default function ProjectPage() {
         <Box sx={{ p: 10, textAlign: 'center' }}><LinearProgress sx={{ maxWidth: 200, mx: 'auto', mb: 2 }} /><Typography color="text.secondary">불러오는 중...</Typography></Box>
       ) : filtered.length === 0 ? (
         <Box sx={{ p: 10, textAlign: 'center' }}>
-          <i className='ri-folder-open-line' style={{ fontSize: 48, opacity: 0.3, display: 'block', mb: 2 }} />
+          <i className='ri-folder-open-line' style={{ fontSize: 48, opacity: 0.3, display: 'block', marginBottom: 16 }} />
           <Typography variant="h6" color="text.secondary" fontWeight="bold">프로젝트가 없습니다</Typography>
         </Box>
       ) : view === 'grid' ? (
